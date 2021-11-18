@@ -1,0 +1,54 @@
+
+GIT
+
+
+Configurar nombre: git config --global user.name "Aaron"
+
+Configurar email: git config --global user.email "<aavefe@fp.insjoaquimmir.cat>"
+
+Crear repositorio vacío: crear una nueva carpeta, entrar dentro y ejecutar git init
+
+Clonar repositorio que ya existe: git clone enlace/carpeta del repositorio que queremos clonar
+
+Staging index es una area temporal donde añadimos archivos cuyos cambios estamos a punto de enviar a git en forma de comit
+
+Para añadir algo a staging index: git add nombre del archivo y git add . para añadir todos a la vez
+
+Para ver los archivos de la carpeta de trabajo: git status
+
+Comit confirma los cambios que hemos hecho y los envia al repositorio: git comit. 
+Se abrirá un editor de texto donde poner el mensaje del commit que se podrá ver, ya sea para nuestros compañeros de trabajo, o para nosotros en un futuro. Primera línea del mensaje a forma de resumen, luego salto de línea y describir el cambio.
+
+Para eliminar archivos: primero hacer rm archivo para eliminarlo del sistema de archivos, git status detectará que lo hemos eliminado del sistema local y luego usar git rm para borrarlo tambien de nuestro sistema. Luego git commit para subir los cambios al repositorio.
+
+Para mover archivos en git, hay que moverlos desde nuestro sistema operativo. Luego hacer git rm al archivo movido para que git lo elimine, y git add a la carpeta nueva que hayamos creado donde se ha guardado ese archivo.
+
+Para deshacer cambios cuando hemos movido un archivo al staging index que no queriamos: git reset HEAD archivo. Para revertir el archivo a la version anterior: git checkout -- archivo.
+
+Para ver el registro: git log. 
+Para ver solo una línea de los comits: git log --oneline.
+Para ver las ramas: git log --online --decorate.
+
+Ramas en git: las ramas sirven para que, por ejemplo, cuando hay un proyecto de varias personas, cada una trabaja en una rama diferente para no mezclar los comits de cada uno. 
+-Para crear ramas: git branch nombrerama. 
+-Para ver las ramas creadas y en la que estamos: git branch. Para cambiar de rama git checkout nombrerama.
+-Para crear una rama y movernos directamente a esa: git checkout -b nombrerama.
+-Para borrar ramas: git branch -d nombrerama.
+
+Fusionar ramas: ir a la rama de destino donde se va a fusionar todo y ejecutar el comando de git merge ramaorigen.
+En caso de haber algún conflicto, como por ejemplo que 2 personas hayan editado la misma línea de un fichero, git nos avisará. Si hacemos git status podremos ver el fichero del conflicto y al entrar en ese fichero nos marcara la línea con los conflictos que haya. Simplemente borramos lo que no nos interesa y nos quedamos con la línea que queramos de las 2 del conflicto.
+
+Moverse entre comits: git log --oneline para ver el código del comit y luego git checkout códigocomit.
+Para volver donde estabamos anteriormente: git checkout rama donde estamos.
+
+Podemos crear tags para identificar más rápidamente nuestros comits con git tag nombretag.
+Para hacer tags a comits anteriores: git tag nombretag códigocomit.
+Para ver la lista de tags dentro del repositorio: git tag.
+Para ir a un comit anterior desde un tag: git tag nombretag.
+
+Para enviar cambios a repositorio remoto: git remote add origin repositorioremoto.
+Luego hay que hacer: git push origin rama que queremos enviar.
+Para ver todas las ramas, incluyendo las remotas: git branch --all.
+Para actualizar el repositorio local con el repositorio remoto: git pull origin rama. Es como hacer un merge entre rama local y remota.
+
+ 

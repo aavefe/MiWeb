@@ -1,0 +1,137 @@
+body{
+    background-image: url("../img/fondo.jpg");
+}
+div.fondo{
+    background-image: url("../img/fondoinicio.jpg");
+    height: 400px;
+    border-style:solid;
+    border-color: black;
+}
+h1.titulo{
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+}
+h2.nombre{
+    font-size: 200%;
+}
+p.nombre{
+    font-size: 150%;
+}
+div.nombre{
+    padding: 40px;
+}
+a.menu:link{
+    color: black;
+    text-decoration: none;    
+}
+a.menu:visited{
+    color: black;
+    text-decoration: none;
+}
+div.inicio{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left:5%;
+    visibility: visible;
+    text-align: center;
+}
+div.quiensoy{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left:5%;
+    visibility: hidden;
+    text-align: center;
+}
+div.aficiones{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left:5%;
+    visibility: hidden;
+    text-align: center;
+}
+div.contacto{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    left:5%;
+    visibility: hidden;
+    text-align: center;
+}
+ul.datos li{
+    list-style-type: none;
+    margin: 30px;
+    font-size: 150%;       
+}
+div.infoaa{
+    padding: 40px;
+}
+p.contacto{
+    font-size: 200%;
+}
+div.redes{   
+    padding: 60px;
+}
+ul.redes{
+    list-style-type: none;
+}
+ul.redes li {
+    display:inline;
+    margin: 40px;
+}
+ul.info{
+    list-style-type: none;
+    text-align: center;
+    background-color: white;
+    border-style:solid;
+    border-color: black;
+    font-size: 150%;
+    opacity: 0.9;
+}
+ul.info li{
+    display:inline;
+    margin: 80px;
+}
+ul.info li:hover{
+    background-color: rgb(119, 118, 118);
+}
+ul.juegos li{
+    list-style-type: none;
+    margin: 20px;
+}
+img.fgs{
+    display: none; 
+}
+img.streetfighter{
+    display: none;
+}
+img.dragonball{
+    display: none; 
+}
+img.guiltygear{
+    display: none;
+}
+img.meltyblood{
+    display: none;
+}
+div.imagenes{
+    margin: 0 auto;
+}
+
+li.hover:hover{
+    background-color: rgb(119, 118, 118);
+}
+a.subrayado:link{
+    color:red;
+}
+a.subrayado:visited{
+    color:red;
+}
+li.cambiocolor:hover{
+    color: blue;
+}
+
+

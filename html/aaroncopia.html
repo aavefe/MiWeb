@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../img/force.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Ventura</title>
+</head>
+
+<body>
+    <ul class="info">
+        <li><a class="menu" onclick="inicioEsVisible()" href="#inicio">Inicio</a></li>
+        <li><a class="menu" onclick="quiensoyEsVisible()" href="#quiensoy">¿Quién soy?</a></li>
+        <li><a class="menu" onclick="aficionesEsVisible()" href="#aficiones">Aficiones</a></li>
+        <li><a class="menu" onclick="contactoEsVisible()" href="#contacto">Contacto</a></li> 
+    </ul>
+
+    <div id="inicio" class="inicio">
+        <a name="inicio"><h1 class="titulo">Inicio</h1></a>
+        <div class="fondo">
+            <div class="nombre">
+                <h2 class="nombre">SOY AARON VENTURA</h2>
+                <p class="nombre">Bienvenidos a mi página web.</p>
+                <img src="../img/html.jpg" width="300" height="150"/>
+            </div>
+        </div>
+    </div>
+  
+    <div id="quiensoy" class="quiensoy">
+        <a name="quiensoy"><h1 class="titulo">¿Quién soy?</h1></a>
+        <div class="fondo">
+            <div class="infoaa">
+                <ul class="infoaa">
+                    <li id="cambiocolor1" onmouseover="cambiarColor1()" onmouseout="volverColor1()">Mi nombre es Aaron Ventura Fernández.</li>
+                    <li id="cambiocolor2" onmouseover="cambiarColor2()" onmouseout="volverColor2()">Tengo 23 años.</li>
+                    <li id="cambiocolor3" onmouseover="cambiarColor3()" onmouseout="volverColor3()">Actualmente cursando 2o DAW en INS Joaquim Mir.</li>
+                    <li id="cambiocolor4" onmouseover="cambiarColor4()" onmouseout="volverColor4()">Para ver mis aficiones haz click en la ventana <a class="subrayado" href="#aficiones" onclick="aficionesEsVisible()">aficiones.</a></li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+
+    <div id="aficiones" class="aficiones">
+        <a name="aficiones"><h1 class="titulo">Aficiones</h1></a>
+        <div class="fondo">
+            <h3>Mi afición principal son los videojuegos, y el género que mas me gusta son los juegos de pelea 2D como:</h3>
+            <ul class="juegos">
+                <li class="hover" onclick="streetfighterEsVisible()">Street Fighter V</li>
+                <li class="hover" onclick="dragonballEsVisible()">Dragon Ball FighterZ</li>
+                <li class="hover" onclick="guiltygearEsVisible()">Guilty Gear Strive</li>
+                <li class="hover" onclick="meltybloodEsVisible()">Melty Blood Type Luminea</li>
+            </ul>
+            <img class="fgs" id="fgs" src="../img/fgs.jpg" width="300" height="150"/>
+            <img class="streetfighter" id="streetfighter" src="../img/streetfighter.jpg" width="300" height="150"/>
+            <img class="dragonball" id="dragonball" src="../img/dragonballfighterz.jpg" width="300" height="150"/>
+            <img class="guiltygear" id="guiltygear" src="../img/guiltygear.png" width="300" height="150"/>
+            <img class="meltyblood" id="meltyblood" src="../img/meltyblood.jpg" width="300" height="150"/>
+        </div>
+    </div>
+      
+    <div id="contacto" class="contacto">
+    <a name="contacto"><h1 class="titulo">Contacto</h1></a>
+        <div class="fondo">
+            <div class="redes">
+                <p class="contacto">Cualquier cosa puedes encontrarme en: </p>
+                <ul class="redes">
+                    <li><a href="https://www.google.com/intl/es/gmail/about/" target="_blank"><img src="../img/logo-Gmail-1.png" width="40" height="35"/></a></li>
+                    <li><a href="https://twitter.com/?lang=es" target="_blank"><img src="../img/twitter-bird-white-on-blue.jpg" width="40" height="40"/></a></li>
+                    <li><a href="https://es-es.facebook.com/" target="_blank"><img src="../img/Facebook.png" width="40" height="40"/></a></li>
+                    <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../img/Instagram-logo.png" width="40" height="40"/></a></li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
